@@ -1,0 +1,36 @@
+@keyframes shake {
+    0% {
+        transform: translateY(0);
+    }
+
+    20% {
+        transform: translateY(-3px) rotate(-10deg);
+    }
+
+    40% {
+        transform: translateY(-3px) rotate(10deg);
+    }
+
+    60% {
+        transform: translateY(-3px) rotate(-10deg);
+    }
+
+    80% {
+        transform: translateY(-3px) rotate(10deg);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.active {
+    opacity: 100%;
+    display: block;
+    animation: shake 0.5s ease-in-out;
+}
+
+.inactive {
+    opacity: 0%;
+    display: none;
+}

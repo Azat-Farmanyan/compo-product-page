@@ -1,0 +1,35 @@
+<header class="header">
+    <div class="header-body">
+        <div class="header-top-block">
+            <div class="page-logo">
+                <img src="../../../../assets/icons/compo-logo.svg" alt="compo-logo">
+                <img class="logo-title" src="../../../../assets/icons/compo-logo-title.svg" alt="compo-title">
+            </div>
+            <button class="menu-btn">
+                <img class="btn-icon" src="../../../../assets/icons/menu-icon.svg" alt="menu">
+                <p class="btn-txt"> Меню </p>
+            </button>
+
+            <app-input />
+            <app-notification-btn />
+            <div class="vertical-line"></div>
+            <app-favorite-btn />
+            <app-cart-small-btn [amount]="144235" />
+            <app-user-profile-btn username="Ермаков Е." />
+        </div>
+        <nav class="header-nav-block">
+            <ul class="nav-items">
+                <li class="nav-item">Мои заказы</li>
+                <li class="nav-item">Сотрудники</li>
+                <li class="nav-item">Шаблоны заказов</li>
+                <li class="nav-item">Обращения</li>
+            </ul>
+            <div class="nav-btns">
+                <app-nav-btn-small icon="message-icon.svg" title="Ваш менеджер" [active]="true" />
+                <app-nav-btn-small icon="percent-icon.svg" title="Акции" />
+                <app-nav-btn-small title="Блог" />
+            </div>
+        </nav>
+
+    </div>
+</header>

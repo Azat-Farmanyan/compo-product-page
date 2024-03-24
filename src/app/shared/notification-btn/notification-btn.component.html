@@ -1,0 +1,6 @@
+<button (click)="isActive = !isActive">
+    <img [ngClass]="{ 'active': !isActive, 'inactive': isActive }"
+        src="../../../assets/icons/notification-not-active-icon.svg" alt="">
+    <img [ngClass]="{ 'active': isActive, 'inactive': !isActive }"
+        src="../../../assets/icons/notification-active-icon.svg" alt="">
+</button>

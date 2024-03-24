@@ -1,0 +1,17 @@
+@if (addedInCard) {
+<button class="product-counter">
+    <button (click)="remove()" class="counter-btns"><img src="../../../assets/icons/minus-icon.svg"
+            alt="remove"></button>
+    <div class="num-of-products">
+        {{numOfProduct}} штуки
+    </div>
+    <button (click)="add()" class="counter-btns"><img src="../../../assets/icons/plus-icon.svg" alt="add"></button>
+</button>
+} @else {
+<button class="add-to-card" (click)="addToCart()">
+    <div class="cart-icon">
+        <img src="../../../assets/icons/cart-icon-white.svg" alt="cart-icon">
+    </div>
+    <p class="cart-btn-text">В корзину</p>
+</button>
+}

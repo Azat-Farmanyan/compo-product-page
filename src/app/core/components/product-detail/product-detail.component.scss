@@ -1,0 +1,182 @@
+.product-detail {
+    .product-detail-block {
+        padding: 32px 0;
+
+        .product-detail-header {
+            .breadcrumb {
+                margin-bottom: 24px;
+            }
+
+            margin-bottom: 32px;
+        }
+
+        .product-detail-body {
+            display: flex;
+            flex-direction: row;
+            gap: 48px;
+
+
+            .product-text-block {
+                // max-width: 1104px;
+                // width: 100%;
+
+                .product-info {
+                    display: flex;
+                    gap: 48px;
+                    width: 100%;
+                    padding-top: 24px;
+                    justify-content: space-between;
+
+                    .order-block {
+                        max-width: 372px;
+                        width: 100%;
+                        height: 100%;
+
+                        display: flex;
+                        flex-direction: column;
+                        gap: 32px;
+
+                        .price-block {
+
+
+                            .sale {
+                                //styleName: Text/TB14;
+                                font-family: Gotham500;
+                                font-size: 14px;
+                                line-height: 16px;
+                                text-align: left;
+                                color: var(--red);
+                                margin-bottom: 24px;
+                            }
+
+                            .title-big {
+                                display: flex;
+                                align-items: center;
+                                margin-bottom: 32px;
+
+                                & img {
+                                    height: 33px;
+                                    padding-bottom: 2px;
+                                    margin-left: 7px;
+                                }
+
+                                .sale-percent {
+                                    //styleName: Title/H5;
+                                    display: block;
+                                    font-family: Gotham700;
+                                    font-size: 16px;
+                                    line-height: 11px;
+                                    text-align: left;
+                                    height: 22px;
+                                    color: var(--white);
+                                    background-color: var(--red);
+                                    padding: 5.5px 8px;
+                                    margin-left: 17px;
+                                    border-radius: 4px;
+                                }
+                            }
+
+                            .package-block {
+                                display: flex;
+                                align-items: center;
+                                gap: 16px;
+
+                                .package-count {
+                                    //styleName: Title/H6;
+                                    font-family: Gotham700;
+                                    font-size: 14px;
+                                    text-align: left;
+                                    color: var(--gray-normal);
+                                    background-color: var(--blue-bg-light);
+                                    border-radius: 8px;
+                                    padding: 8px;
+                                }
+
+                                .toggle-block {
+                                    display: flex;
+                                    align-items: center;
+                                    gap: 12px;
+
+                                    .toggle-txt {
+                                        //styleName: Text/TB14;
+                                        font-family: Gotham500;
+                                        font-size: 14px;
+                                        line-height: 16px;
+                                        text-align: left;
+                                        color: var(--black-normal);
+                                    }
+                                }
+                            }
+                        }
+
+                        .order-info {
+                            .order-info-items {
+                                display: flex;
+                                justify-content: space-between;
+                                gap: 16px;
+
+                                .order-info-item {
+                                    display: flex;
+                                    flex-direction: column;
+                                    justify-content: flex-start;
+                                    gap: 8px;
+                                    width: 100%;
+                                    height: 40px;
+                                }
+                            }
+
+                            .order-btns {
+                                height: 56px;
+                                margin-top: 32px;
+                                display: flex;
+                                align-items: center;
+                                justify-content: flex-start;
+                                gap: 16px;
+
+                                app-add-to-card-btn {
+                                    width: 100%;
+                                }
+
+                                app-favorite-btn-v2 {
+                                    height: 100%;
+                                }
+
+                            }
+                        }
+
+                    }
+
+                    .characteristics-block {
+                        width: 100%;
+                        padding: 6px 0;
+
+
+                        display: flex;
+                        flex-direction: column;
+                        gap: 32px 24px;
+
+                        .characteristics {
+                            display: grid;
+                            grid-template-columns: 1fr 1fr;
+                            gap: 32px;
+
+                            .characteristic-item {
+                                display: flex;
+                                flex-direction: column;
+                                gap: 12px;
+                            }
+                        }
+                    }
+                }
+
+                .product-description {
+                    display: flex;
+                    flex-direction: column;
+                    margin-top: 48px;
+                    gap: 24px;
+                }
+            }
+
+        }
+    }
+}

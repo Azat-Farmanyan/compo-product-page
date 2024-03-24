@@ -1,0 +1,86 @@
+<footer class="footer content wrapper">
+    <div class="footer-header ">
+        <div class="contact-block">
+            <div class="page-logo">
+                <img class="logo" src="../../../../assets/icons/compo-logo.svg" alt="compo-logo">
+                <img class="logo-title" src="../../../../assets/icons/compo-logo-title.svg" alt="compo-title">
+            </div>
+
+            <div class="contacts">
+                <div class="contact-item">
+                    <div class="title"> 8 800 841-95-95 </div>
+                    <div class="subtitle"> Служба поддержки </div>
+                </div>
+                <div class="contact-item">
+                    <div class="title"> {{'support@sport.ru'}} </div>
+                    <div class="subtitle"> Служба поддержки </div>
+                </div>
+            </div>
+        </div>
+        <nav class="footer-nav">
+            <a href="#">Вакансии</a>
+            <a href="#">Блог</a>
+            <a href="#">Акции</a>
+            <a href="#" class="active">Предложить идею</a>
+        </nav>
+    </div>
+    <div class="horizontal-line"></div>
+
+    <div class="footer-body ">
+        <div class="categories">
+            @for ( category of categories; track category) {
+            <div class="category-column">
+                <div class="categories-title">
+                    {{category.title}}
+                </div>
+                <div class="categories-items">
+                    @for (categoryItem of category.items; track categoryItem) {
+                    <a href="#" class="categories-item">
+                        {{categoryItem}}
+                    </a>
+                    }
+                </div>
+            </div>
+            }
+        </div>
+    </div>
+    <div class="horizontal-line"></div>
+
+    <div class="footer-footer wrapper content">
+        <div class="license-agreement">
+            <div class="license-item">
+                <img src="../../../../assets/icons/pdf-icon.svg" alt="pdf-icon">
+                <p class="license-txt">PDF презентация</p>
+            </div>
+            <div class="license-item">
+                <img src="../../../../assets/icons/video-icon.svg" alt="video-icon">
+                <p class="license-txt">Видео инструкция</p>
+            </div>
+            <div class="license-item">
+                <img src="../../../../assets/icons/instruction-icon.svg" alt="instruction-icon">
+                <p class="license-txt">FAQ</p>
+            </div>
+            <div class="license-item">
+                <img src="../../../../assets/icons/youtube-icon.svg" alt="youtube-icon">
+                <p class="license-txt active">Мы на YouTube</p>
+            </div>
+            <div class="license-item">
+                <p class="license-txt">Политика конфиденциальности</p>
+            </div>
+            <div class="license-item">
+                <p class="license-txt">Лицензионное соглашение</p>
+            </div>
+        </div>
+        <div class="privacy-policy">
+            Настоящая Политика обработки персональных данных разработана в соответствии с Конституцией Российской
+            Федерации,
+            Трудовым кодексом Российской Федерации, Гражданским кодексом Российской Федерации, Федеральным законом от 27
+            июля 2006
+            года 149-ФЗ "Об информации, информационных технологиях и о защите информации",
+        </div>
+        <div class="page-logo">
+            <img src="../../../../assets/icons/compo-logo-gray.svg" alt="compo-logo">
+            <p>Разработка платформы</p>
+        </div>
+    </div>
+</footer>

@@ -1,0 +1,31 @@
+.nav-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    gap: 8px;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: all 0.5s ease;
+
+    & img {
+        width: 16px;
+        height: 16px;
+    }
+
+    & p {
+        font-family: GothamPro700;
+        font-size: 14px;
+        line-height: 16px;
+        text-align: center;
+        color: var(--blue);
+    }
+
+    &:hover {
+        background-color: var(--blue-bg-light);
+    }
+}
+
+.active {
+    background-color: var(--blue-bg-light);
+}

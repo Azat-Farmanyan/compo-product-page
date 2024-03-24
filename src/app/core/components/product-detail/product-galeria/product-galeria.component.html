@@ -1,0 +1,20 @@
+<div class="product-galeria">
+    <div class="active-item">
+        <img [src]="catalogFolderPath + products[activeItem]" alt="">
+    </div>
+    <nav class="galeria-nav">
+        <button class="go-left" (click)="left()">
+            <img src="../../../../../assets/icons/left-arrow.svg" alt="left">
+        </button>
+        <ul class="catalog">
+            @for (product of products.slice(1); track product; let i = $index) {
+            <li class="catalog-item" (click)="setActive(i+1)">
+                <img [src]="catalogFolderPath + product" [alt]="product">
+            </li>
+            }
+        </ul>
+        <button class="go-right" (click)="right()">
+            <img src="../../../../../assets/icons/right-arrow.svg" alt="right">
+        </button>
+    </nav>
+</div>

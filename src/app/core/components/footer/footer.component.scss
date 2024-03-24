@@ -1,0 +1,203 @@
+.footer {
+    .footer-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 59px;
+        margin: 56px 0;
+
+        .contact-block {
+
+            // Styles for contact block
+            display: flex;
+            align-items: center;
+            gap: 56px;
+
+            .page-logo {
+
+                // Styles for page logo
+
+                display: flex;
+                align-items: flex-end;
+                justify-content: flex-start;
+                gap: 12px;
+                padding-left: 8px;
+                cursor: pointer;
+
+                .logo {
+                    width: 40px;
+                    height: 40px;
+                }
+
+                .logo-title {
+                    height: 35px;
+                    // Styles for logo title
+                }
+            }
+
+            .contacts {
+
+                // Styles for contacts
+
+                display: flex;
+                align-items: center;
+                gap: 48px;
+
+                .contact-item {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    gap: 16px;
+
+                    // Styles for contact item
+                    .title {
+                        font-family: Gotham700;
+                        font-size: 16px;
+                        line-height: 125%;
+                        color: var(--black-dark);
+                    }
+
+                    .subtitle {
+                        font-family: Gotham400;
+                        font-size: 12px;
+                        line-height: 133%;
+                        color: var(--gray-subtitle);
+                    }
+                }
+            }
+        }
+
+        .footer-nav {
+
+            // Styles for footer nav
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            gap: 32px;
+
+            a {
+                font-family: Gotham700;
+                font-size: 16px;
+                line-height: 125%;
+                text-align: center;
+                color: #071435;
+
+                // Styles for nav links
+                &.active {
+                    font-family: Gotham500;
+                    font-size: 14px;
+                    line-height: 114%;
+                    text-align: center;
+                    color: var(--blue);
+
+                    border-radius: 8px;
+                    padding: 12px 24px;
+                    background-color: var(--blue-bg-light);
+                }
+            }
+        }
+    }
+
+    .footer-body {
+        padding: 48px 0;
+
+        .categories {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 24px;
+
+            .category-column {
+
+                display: flex;
+                flex-direction: column;
+                gap: 24px;
+
+                .categories-title {
+                    font-family: Gotham500;
+                    font-size: 16px;
+                    line-height: 150%;
+                    color: #050d23;
+                }
+
+                .categories-items {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 16px;
+
+                    .categories-item {
+                        font-family: Gotham400;
+                        font-size: 14px;
+                        line-height: 114%;
+                        color: #050d23;
+                    }
+                }
+            }
+
+        }
+    }
+
+    .footer-footer {
+        padding: 48px 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 40px;
+
+        .license-agreement {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 28px;
+
+            .license-item {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 8px;
+
+                &img {
+                    height: 16px;
+                    width: 16px;
+                }
+
+                .license-txt {
+                    font-family: Gotham400;
+                    font-size: 12px;
+                    line-height: 133%;
+                    color: var(--gray-normal);
+                }
+
+                .active {
+                    color: var(--blue);
+                }
+            }
+        }
+
+        .privacy-policy {
+            font-family: Gotham400;
+            font-size: 12px;
+            line-height: 133%;
+            text-align: center;
+            color: var(--gray-normal);
+        }
+
+        .page-logo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 24px;
+
+            & img {
+                cursor: pointer;
+            }
+
+            & p {
+                font-family: Gotham700;
+                font-size: 14px;
+                line-height: 114%;
+                color: #8f9bb3;
+            }
+        }
+    }
+}

@@ -1,1 +1,116 @@
-/* You can add global styles to this file, and also import other style files */
+@import url("./null.scss");
+
+@import url("./fonts.scss");
+
+// colors
+:root {
+    --blue: #1551E5;
+    --blue-light: #316CFF;
+    --blue-bg-light: #F2F6FF;
+
+    --white: #ffffff;
+    --red: #FF3D71;
+
+    --gray-light: #E2E4F0;
+    --gray-normal: #828EAD;
+    --gray-disabled: #E9ECF2;
+    --gray-outline: #E1E5EB;
+    --gray-placeholder: #B2BACE;
+    --gray-subtitle: #77829E;
+
+    --black-dark: #050D23;
+    --black-normal: #071435;
+}
+
+.wrapper {
+    padding: 0px 24px;
+}
+
+.content {
+    max-width: 1600px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+
+.vertical-line {
+    background-color: var(--gray-light);
+    width: 1px;
+    height: 100%;
+}
+
+.horizontal-line {
+    background-color: var(--gray-light);
+    width: 100%;
+    height: 1px;
+}
+
+.subtitle-S3 {
+    //styleName: Subtitle/S3;
+    font-family: Gotham400;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: left;
+    color: var(--gray-normal);
+}
+
+.title-H2 {
+    //styleName: Title/H2 CAPS;
+    font-family: GothamPro500;
+    font-size: 32px;
+    line-height: 32px;
+    text-align: left;
+    color: var(--black-normal);
+}
+
+.title-big {
+    //styleName: Title/H1;
+    font-family: Gotham700;
+    font-size: 32px;
+    letter-spacing: 0.01em;
+    text-align: left;
+}
+
+.title-H6 {
+    //styleName: Title/H6;
+    font-family: Gotham700;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: left;
+    color: var(--black-normal);
+}
+
+.subtitle-s3 {
+    //styleName: Subtitle/S3;
+    font-family: Gotham400;
+    font-size: 12px;
+    text-align: left;
+    color: var(--gray-normal);
+}
+
+.title-H4 {
+    //styleName: Title/H4;
+    font-family: Gotham500;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: left;
+    color: var(--black-normal);
+}
+
+.title-H3 {
+    //styleName: Title/H3;
+    font-family: Gotham500;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: left;
+    color: var(--black-normal);
+}
+
+.paragraph-P1 {
+    //styleName: Paragraph/P1;
+    font-family: Gotham400;
+    font-size: 18px;
+    line-height: 28px;
+    text-align: left;
+}

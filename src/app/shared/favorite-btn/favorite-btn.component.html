@@ -1,0 +1,6 @@
+<button (click)="isActive = !isActive">
+    <img [ngClass]="{ 'active': !isActive, 'inactive': isActive }" src="../../../assets/icons/heart-not-active-icon.svg"
+        alt="heart-not-active">
+    <img [ngClass]="{ 'active': isActive, 'inactive': !isActive }" src="../../../assets/icons/heart-active-icon.svg"
+        alt="heart-active">
+</button>

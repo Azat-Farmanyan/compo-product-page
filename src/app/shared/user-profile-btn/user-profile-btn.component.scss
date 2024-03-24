@@ -1,0 +1,28 @@
+.user-profile {
+    display: flex;
+    align-items: center;
+
+    justify-content: center;
+    gap: 16px;
+
+    .user-avatar {
+        width: 32px;
+        height: 32px;
+    }
+
+    .user-name {
+        //styleName: Title/H6;
+        font-family: GothamPro500;
+        font-size: 14px;
+        text-wrap: nowrap;
+        line-height: 16px;
+        text-align: left;
+    }
+
+    .drobdown-btn {
+        & img {
+            width: 24px;
+            height: 24px;
+        }
+    }
+}

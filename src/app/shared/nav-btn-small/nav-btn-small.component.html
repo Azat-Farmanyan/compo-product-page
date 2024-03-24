@@ -1,0 +1,6 @@
+<button class="nav-btn active" [ngClass]="{'active': active}">
+    @if (!!icon) {
+    <img class="icon" [src]="iconsFolderPath + icon" [alt]="icon">
+    }
+    <p>{{title}}</p>
+</button>

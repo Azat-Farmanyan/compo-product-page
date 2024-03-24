@@ -1,0 +1,7 @@
+<button class="favorite-btn" (click)="isActive = !isActive">
+    <img [ngClass]="{ 'active': isActive, 'inactive': !isActive }"
+        src="../../../assets/icons/heart-active-small-icon-red.svg" alt="Save to favorites">
+
+    <img [ngClass]="{ 'active': !isActive, 'inactive': isActive }"
+        src="../../../assets/icons/heart-not-active-small-icon-blue.svg" alt="Save to favorites">
+</button>

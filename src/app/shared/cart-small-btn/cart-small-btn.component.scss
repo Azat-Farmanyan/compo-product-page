@@ -1,0 +1,40 @@
+.cart-small-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    padding: 12px 24px;
+    background-color: var(--blue-bg-light);
+    height: 48px;
+    border-radius: 8px;
+
+    cursor: pointer;
+
+    .cart-icon {
+        width: 24px;
+        height: 24px;
+    }
+
+    .amount-block {
+        display: flex;
+        align-items: center;
+        justify-content: left;
+        flex-wrap: nowrap;
+
+        .cart-amount {
+            display: flex;
+            flex-wrap: nowrap;
+            font-family: Gotham700;
+            font-size: 14px;
+            line-height: 16px;
+            text-align: center;
+            text-wrap: nowrap;
+            color: var(--blue);
+        }
+
+        .currency-symbol {
+            height: 15px;
+        }
+
+    }
+}
